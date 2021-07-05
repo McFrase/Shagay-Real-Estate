@@ -1,0 +1,242 @@
+*,
+*::before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+$shaygayRed: #ff0000;
+$white: #fff;
+$black: #111;
+$borderColor-3: rgba(112, 112, 112, 0.2);
+$borderColor-8: rgba(0,0,0,0.08);
+$gray: #707070;
+
+::selection{
+    background-color: $shaygayRed;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.main{
+    min-height: 100vh;
+    position: relative;
+}
+
+section{
+    padding: 7.9rem;
+    position: relative;
+
+    @media screen and (max-width: 768px ) {
+        padding: 3.9rem 0;
+    }
+}
+
+.container{
+    position: relative;
+    z-index: 2;
+}
+
+.miniTitle{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $shaygayRed;
+    letter-spacing: 1.4rem;
+
+    @media screen  and (max-width: 768px){
+        letter-spacing: 1rem;
+    }
+
+    &::selection{
+        background: $shaygayRed;
+        color: $white;
+    }
+}
+
+.mainTitle{
+    font-size: 12rem;
+    text-transform: capitalize;
+    -webkit-text-stroke: 1.4px $white;
+    color: $black;
+    cursor: default;
+    margin-left: -1rem;
+    user-select: none;
+
+    @media screen  and (max-width: 768px){
+        font-size: 2rem !important;
+        -webkit-text-stroke: 0;
+        color: $white;
+        margin-left: initial;
+    }
+}
+
+.mainTitles{
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-left: -1rem;
+
+    @media screen  and (max-width: 768px){
+        font-size: 2rem !important;
+        margin-left: initial;
+    }
+}
+
+.bodyCopy{
+    font-size: 1rem;
+}
+
+.dark,
+.light{
+    position: relative;
+
+    &::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: -100;
+    width: 100%;
+    }
+}
+
+.light{
+    background: $white;
+}
+
+.dark{
+    background: $black;
+    color: $white;
+}
+
+.animatedCursor{
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $shaygayRed;
+    border-radius: 50%;
+    z-index: 20000;
+    user-select:none;
+    pointer-events:none;
+}
+
+.followCursor{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: 2px solid $shaygayRed;
+    border-radius: 50%;
+    z-index: 10009;
+    user-select:none;
+    pointer-events:none;
+}
+
+.dots{
+    display: flex;
+    flex-direction: column;
+
+    .inner-dots{
+        width: 6px;
+        height: 6px;
+        margin: .4rem 0;
+        background-color: $shaygayRed;
+        border-radius: 50%;
+        opacity: .5;
+    }
+}
+
+.navContainer{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background: $black;
+    z-index: 10000;
+    width: 100%;
+
+    .myNav{
+        display: flex;
+        width: 30%;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        height: 100%;
+
+        li{
+            a{
+                text-decoration: none;
+                color: $white;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                opacity: .8;
+
+                &.active{
+                    color: #ff0000;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media screen  and (max-width: 768px){
+    .followCursor, .animatedCursor{
+        display: none;
+    }
+
+    .navContainer{
+        height: 15vh;
+    }
+
+    .myNav{
+        width: 60% !important;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .mainTitle{
+        font-size: 8rem;
+    }
+
+    .miniTitle{
+        font-size: .8rem;
+        letter-spacing: 1rem;
+    }
+
+    .mainTitles{
+        font-size: 3rem;
+    }
+
+    #services{
+        .mainTitles{
+            font-size: 2rem !important;
+        }
+
+        li{
+            font-size: 1rem !important;
+        }
+    }
+
+    #contact{
+        .mainTitle{
+            font-size: 8rem !important;
+        }
+    }
+}
