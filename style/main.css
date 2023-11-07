@@ -4,8 +4,7 @@
 *:after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ::-moz-selection {
@@ -19,7 +18,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -35,7 +34,6 @@ section {
   padding: 7.9rem;
   position: relative;
 }
-
 @media screen and (max-width: 768px) {
   section {
     padding: 3.9rem 0;
@@ -53,18 +51,15 @@ section {
   color: #ff0000;
   letter-spacing: 1.4rem;
 }
-
 @media screen and (max-width: 768px) {
   .miniTitle {
     letter-spacing: 1rem;
   }
 }
-
 .miniTitle::-moz-selection {
   background: #ff0000;
   color: #fff;
 }
-
 .miniTitle::selection {
   background: #ff0000;
   color: #fff;
@@ -79,10 +74,8 @@ section {
   margin-left: -1rem;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
-
 @media screen and (max-width: 768px) {
   .mainTitle {
     font-size: 2rem !important;
@@ -98,7 +91,6 @@ section {
   font-weight: 700;
   margin-left: -1rem;
 }
-
 @media screen and (max-width: 768px) {
   .mainTitles {
     font-size: 2rem !important;
@@ -114,7 +106,6 @@ section {
 .light {
   position: relative;
 }
-
 .dark::before,
 .light::before {
   content: "";
@@ -146,7 +137,6 @@ section {
   z-index: 20000;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   pointer-events: none;
 }
@@ -163,69 +153,48 @@ section {
   z-index: 10009;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   pointer-events: none;
 }
 
 .dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .dots .inner-dots {
   width: 6px;
   height: 6px;
-  margin: .4rem 0;
+  margin: 0.4rem 0;
   background-color: #ff0000;
   border-radius: 50%;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .navContainer {
   height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   background: #111;
   z-index: 10000;
   width: 100%;
 }
-
 .navContainer .myNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 30%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   list-style: none;
   height: 100%;
 }
-
 .navContainer .myNav li a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
-  opacity: .8;
+  opacity: 0.8;
 }
-
 .navContainer .myNav li a.active {
   color: #ff0000;
   opacity: 1;
@@ -242,13 +211,12 @@ section {
     width: 60% !important;
   }
 }
-
 @media screen and (max-width: 1400px) {
   .mainTitle {
     font-size: 8rem;
   }
   .miniTitle {
-    font-size: .8rem;
+    font-size: 0.8rem;
     letter-spacing: 1rem;
   }
   .mainTitles {
@@ -264,33 +232,27 @@ section {
     font-size: 8rem !important;
   }
 }
-
 #about {
   min-height: 100vh;
-  display: -ms-grid;
   display: grid;
   place-items: center;
 }
-
 #about .bodyCopy {
   font-size: 1.4rem;
   line-height: 2.4rem;
 }
-
 @media screen and (max-width: 768px) {
   #about .bodyCopy {
     line-height: 1.9rem;
     font-size: 1rem;
   }
 }
-
 #about .mainTitles {
   font-size: 2rem;
   text-transform: initial;
   width: 30ch;
   margin: 1.5rem 0;
 }
-
 @media screen and (max-width: 768px) {
   #about .mainTitles {
     width: initial;
@@ -302,40 +264,34 @@ section {
   text-transform: initial;
   margin: 1.5rem 0;
 }
-
 @media screen and (max-width: 768px) {
   #services .mainTitles {
     font-size: 2rem;
   }
 }
-
 #services h5 {
   font-size: 1rem;
   font-weight: 400;
 }
-
 @media screen and (max-width: 768px) {
   #services h5 {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
-
 @media screen and (max-width: 768px) {
   #services .image {
     width: 50px;
     height: auto;
   }
 }
-
 #services ul li {
   list-style: none;
   font-size: 1.4rem;
   margin: 1rem 0;
   position: relative;
 }
-
 #services ul li::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 10px;
   height: 10px;
@@ -343,10 +299,8 @@ section {
   border: 1px solid #ff0000;
   left: -1.4rem;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
 @media screen and (max-width: 768px) {
   #services ul li {
     font-size: 1rem;
@@ -359,40 +313,33 @@ section {
   bottom: 3rem;
   z-index: 1000;
 }
-
 @media screen and (max-width: 768px) {
   .chatButton {
     right: 1rem;
     bottom: 1rem;
   }
 }
-
 .chatButton span {
   width: 70px;
   height: 70px;
   background: #fff;
   border-radius: 50%;
-  display: -ms-grid;
   display: grid;
   place-items: center;
 }
-
 .chatButton span a {
   width: 50%;
 }
-
 @media screen and (max-width: 768px) {
   .chatButton span {
     width: 50px;
     height: 50px;
   }
 }
-
 .chatButton span img {
   width: 100%;
   height: auto;
 }
-
 .chatButton .curvedText {
   width: 150px;
   position: absolute;
@@ -400,7 +347,6 @@ section {
   top: -3rem;
   z-index: -1;
 }
-
 @media screen and (max-width: 768px) {
   .chatButton .curvedText {
     width: 100px;
@@ -426,38 +372,28 @@ section {
   height: 100px;
   border-radius: 50%;
   border: 2px solid #ff0000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .roundImg .icon {
   width: 60%;
   height: auto;
 }
 
-span.mainTitle, span.mainTitles {
+span.mainTitle,
+span.mainTitles {
   display: block;
 }
 
 a {
   overflow: hidden;
 }
-
 a img {
-  -webkit-transition: .8s ease-in;
-  transition: .8s ease-in;
+  transition: 0.8s ease-in;
 }
-
 a:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .btnCustom {
@@ -465,10 +401,8 @@ a:hover img {
   color: #707070;
   position: relative;
   font-size: 1.2rem;
-  -webkit-transition: .35s ease-in;
-  transition: .35s ease-in;
+  transition: 0.35s ease-in;
 }
-
 .btnCustom::before {
   content: "";
   width: 40px;
@@ -480,32 +414,25 @@ a:hover img {
   left: -1rem;
   top: 50%;
   z-index: -1;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transition: .35s ease-in;
-  transition: .35s ease-in;
+  transform: translateY(-50%);
+  transition: 0.35s ease-in;
 }
-
 .btnCustom:hover {
   color: #ff0000;
 }
-
 .btnCustom:hover::before {
   width: 50px;
   height: 50px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .propertyLink {
   color: #707070;
   text-decoration: none;
-  -webkit-transition: .35s ease-in;
-  transition: .35s ease-in;
+  transition: 0.35s ease-in;
 }
-
 .propertyLink:hover {
   color: #ff0000;
   text-decoration: underline;
@@ -518,7 +445,6 @@ a:hover img {
   color: #fff;
   cursor: default;
 }
-
 @media screen and (max-width: 768px) {
   #contact .mainTitle {
     font-size: 3rem !important;
@@ -526,24 +452,21 @@ a:hover img {
     color: #fff;
   }
 }
-
 #contact a span {
   display: block;
 }
-
 #contact a {
   color: #707070;
 }
-
 #contact .socialMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 0 !important;
 }
-
 #contact .socialMenu li {
   list-style: none;
   margin: 0 1.2rem 0 0;
 }
-/*# sourceMappingURL=main.css.map */
+
+span.d-block {
+  text-transform: uppercase;
+}/*# sourceMappingURL=main.css.map */

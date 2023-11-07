@@ -2,12 +2,12 @@
 
 @import '_global.scss';
 
-#about{
+#about {
     min-height: 100vh;
     display: grid;
     place-items: center;
 
-    .bodyCopy{
+    .bodyCopy {
         font-size: 1.4rem;
         line-height: 2.4rem;
 
@@ -17,7 +17,7 @@
         }
     }
 
-    .mainTitles{
+    .mainTitles {
         font-size: 2rem;
         text-transform: initial;
         width: 30ch;
@@ -29,8 +29,8 @@
     }
 }
 
-#services{
-    .mainTitles{
+#services {
+    .mainTitles {
         font-size: 3rem;
         text-transform: initial;
         margin: 1.5rem 0;
@@ -40,30 +40,30 @@
         }
     }
 
-    h5{
+    h5 {
         font-size: 1rem;
         font-weight: 400;
 
-        @media screen  and (max-width: 768px){
+        @media screen and (max-width: 768px) {
             font-size: .8rem;
         }
     }
 
-    .image{
-        @media screen  and (max-width: 768px){
+    .image {
+        @media screen and (max-width: 768px) {
             width: 50px;
             height: auto;
         }
     }
 
-    ul{
-        li{
+    ul {
+        li {
             list-style: none;
             font-size: 1.4rem;
             margin: 1rem 0;
             position: relative;
 
-            &::before{
+            &::before {
                 content: '';
                 position: absolute;
                 width: 10px;
@@ -82,7 +82,7 @@
     }
 }
 
-.chatButton{
+.chatButton {
     position: fixed;
     right: 3rem;
     bottom: 3rem;
@@ -93,7 +93,7 @@
         bottom: 1rem;
     }
 
-    span{
+    span {
         width: 70px;
         height: 70px;
         background: $white;
@@ -102,7 +102,7 @@
         display: grid;
         place-items: center;
 
-        a{
+        a {
             width: 50%;
         }
 
@@ -111,19 +111,19 @@
             height: 50px;
         }
 
-        img{
+        img {
             width: 100%;
             height: auto;
         }
     }
 
-    .curvedText{
+    .curvedText {
         width: 150px;
         position: absolute;
         left: -2.5rem;
         top: -3rem;
         z-index: -1;
-        
+
         @media screen and (max-width: 768px) {
             width: 100px;
             left: -1.5rem;
@@ -132,19 +132,19 @@
     }
 }
 
-.image{
+.image {
     width: 100px;
     height: auto;
 }
 
-.images{
-    @media screen and (max-width: 768px) {        
+.images {
+    @media screen and (max-width: 768px) {
         width: 100px;
         height: auto;
     }
 }
 
-.roundImg{
+.roundImg {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -153,37 +153,39 @@
     align-items: center;
     justify-content: center;
 
-    .icon{
+    .icon {
         width: 60%;
         height: auto;
     }
 }
 
-span.mainTitle, span.mainTitles{
+span.mainTitle,
+span.mainTitles {
     display: block;
 }
 
-a{
+a {
     overflow: hidden;
-    img{
+
+    img {
         transition: .8s ease-in;
     }
 
-    &:hover{
-        img{
+    &:hover {
+        img {
             transform: scale(1.1);
         }
     }
 }
 
-.btnCustom{
+.btnCustom {
     text-decoration: none;
     color: $gray;
     position: relative;
     font-size: 1.2rem;
     transition: .35s ease-in;
 
-    &::before{
+    &::before {
         content: "";
         width: 40px;
         height: 40px;
@@ -196,12 +198,12 @@ a{
         z-index: -1;
         transform: translateY(-50%);
         transition: .35s ease-in;
-}
+    }
 
-    &:hover{
+    &:hover {
         color: $shaygayRed;
 
-        &::before{
+        &::before {
             width: 50px;
             height: 50px;
             top: 50%;
@@ -211,49 +213,53 @@ a{
     }
 }
 
-.propertyLink{
+.propertyLink {
     color: $gray;
     text-decoration: none;
     transition: .35s ease-in;
 
-    &:hover{
-    color: $shaygayRed;
-    text-decoration: underline;
+    &:hover {
+        color: $shaygayRed;
+        text-decoration: underline;
     }
 }
 
-#contact{
-    .mainTitle{
+#contact {
+    .mainTitle {
         font-size: 12rem;
         text-transform: uppercase;
         -webkit-text-stroke: 1.4px $black;
         color: $white;
         cursor: default;
-    
-        @media screen  and (max-width: 768px){
+
+        @media screen and (max-width: 768px) {
             font-size: 3rem !important;
             -webkit-text-stroke: 1.4px $black;
             color: $white;
         }
     }
 
-    a{
-        span{
+    a {
+        span {
             display: block;
         }
     }
 
-    a{
+    a {
         color: $gray;
     }
 
-    .socialMenu{
+    .socialMenu {
         display: flex;
         padding-left: 0 !important;
 
-        li{
+        li {
             list-style: none;
             margin: 0 1.2rem 0 0;
         }
     }
+}
+
+span.d-block {
+    text-transform: uppercase;
 }
